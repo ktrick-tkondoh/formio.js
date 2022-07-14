@@ -1121,7 +1121,7 @@ export default class SelectComponent extends Field {
         }
       }
 
-      if (this.itemsFromUrl) {
+      if (this.itemsFromUrl && !this.component.noOnScrollRefresh) {
         this.scrollList = this.choices.choiceList.element;
         this.addEventListener(this.scrollList, 'scroll', () => this.onScroll());
       }

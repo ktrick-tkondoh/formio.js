@@ -13,6 +13,7 @@ import {
   comp4,
   comp5,
   comp6,
+  comp7,
   withDefValue,
  // withRowGroupsAndDefValue,
   modalWithRequiredFields,
@@ -402,6 +403,18 @@ describe('DataGrid Panels', () => {
           lastName: ''
         }
       ]);
+    });
+  });
+
+  it('Should hide label in header for Button component when dataGridLabel is false.', () => {
+    const formElement = document.createElement('div');
+    return Formio.createForm(formElement, {
+      display: 'form',
+      components: [comp7]
+    })
+    .then((form) => {
+      assert.equal(formElement.getElementsByTagName('th')[0].textContent.trim(), '', 'Should hide a label');
+      assert.equal(formElement.getElementsByTagName('th')[1].textContent.trim(), 'Text Field', 'Should show a label');
     });
   });
 });

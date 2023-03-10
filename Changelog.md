@@ -4,6 +4,23 @@ All notable changes to this project will be documented in this file
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## 4.14.10.ktrick.1
+### Changed
+
+* push_lib.sh
+    - ライブラリのみBitbucketにプッシュできるスクリプトを実行する
+* zip_dist.sh
+    - distディレクトリを formio.dist.4.14.10.zip に圧縮する
+* src/components/_classes/component/Component.js
+    - Quillエディタのデフォルト設定を変更
+    - `addQuill` 関数にて、マージプロセスを削除
+* src/components/_classes/component/editForm/Component.edit.data.js
+    - `Component` のデータタブにおいて、 `Persistent`,`Protected`,`Database Index`,`Encrypted (Enterprise Only)` を削除
+* src/components/_classes/component/editForm/Component.edit.validation.js
+    - `Component` の検証タブにおいて、 `Secret Validation` を削除
+* src/components/day/Day.js
+    - 日付コンポーネントにおいて、 「日(Day)」と「日付(Date)」を使い分けるように変更
+
 ## 4.14.10
 ### Changed
  - Official Release

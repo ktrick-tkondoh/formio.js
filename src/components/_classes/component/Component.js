@@ -2134,11 +2134,11 @@ export default class Component extends Element {
             [{ 'size': ['small', false, 'large', 'huge'] }],  // custom dropdown
             [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
             [{ 'font': [] }],
-            ['bold', 'italic', 'underline', 'strike', { 'script': 'sub' }, { 'script': 'super' }, 'clean'],
+            ['bold', 'italic', 'underline', 'strike', 'clean'],
             [{ 'color': [] }, { 'background': [] }],
             [{ 'list': 'ordered' }, { 'list': 'bullet' }, { 'indent': '-1' }, { 'indent': '+1' }, { 'align': [] }],
             ['blockquote', 'code-block'],
-            ['link', 'image', 'video', 'formula', 'source']
+            ['link', 'image', 'video']
           ]
         }
       },
@@ -2209,7 +2209,10 @@ export default class Component extends Element {
 
   addQuill(element, settings, onChange) {
     settings = _.isEmpty(settings) ? this.wysiwygDefault.quill : settings;
-    settings = _.merge(this.wysiwygDefault.quill, _.get(this.options, 'editors.quill.settings', {}), settings);
+    // マージ作業をコメントアウト
+    // マージしてしまうと、デフォルト設定と混在してしまう。
+    // これがバグじゃないのが不思議。
+    // settings = _.merge(this.wysiwygDefault.quill, _.get(this.options, 'editors.quill.settings', {}), settings);
     settings = {
       ...settings,
       modules: {

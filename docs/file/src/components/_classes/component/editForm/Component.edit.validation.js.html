@@ -258,20 +258,20 @@ export default [
             &lt;pre&gt;valid = (input === &apos;Joe&apos;) ? true : &apos;Your name must be &quot;Joe&quot;&apos;;&lt;/pre&gt;
           &lt;/small&gt;`
       },
-      {
-        type: &apos;well&apos;,
-        components: [
-          {
-            weight: 100,
-            type: &apos;checkbox&apos;,
-            label: &apos;Secret Validation&apos;,
-            tooltip: &apos;Check this if you wish to perform the validation ONLY on the server side. This keeps your validation logic private and secret.&apos;,
-            description: &apos;Check this if you wish to perform the validation ONLY on the server side. This keeps your validation logic private and secret.&apos;,
-            key: &apos;validate.customPrivate&apos;,
-            input: true
-          }
-        ]
-      }
+      // {
+      //   type: &apos;well&apos;,
+      //   components: [
+      //     {
+      //       weight: 100,
+      //       type: &apos;checkbox&apos;,
+      //       label: &apos;Secret Validation&apos;,
+      //       tooltip: &apos;Check this if you wish to perform the validation ONLY on the server side. This keeps your validation logic private and secret.&apos;,
+      //       description: &apos;Check this if you wish to perform the validation ONLY on the server side. This keeps your validation logic private and secret.&apos;,
+      //       key: &apos;validate.customPrivate&apos;,
+      //       input: true
+      //     }
+      //   ]
+      // }
     ]
   },
   {
@@ -328,48 +328,83 @@ export default [
       {
         type: &apos;htmlelement&apos;,
         tag: &apos;div&apos;,
-        content: `
-          &lt;p&gt;This allows you to set different custom error messages for different errors
-          (in contrast to &#x201C;Custom Error Message&#x201D;, which only allows you to set one
-          error message for all errors). E.g.&lt;/p&gt;
-
+        content: `&lt;p&gt;This allows you to set different custom error messages for different errors (in contrast to &#x201C;Custom Error Message&#x201D;, which only allows you to set one error message for all errors). E.g.&lt;/p&gt;
 &lt;pre&gt;{
-  &quot;required&quot;: &quot;{&lt;span/&gt;{ field }} is required. Try again.&quot;,
-  &quot;maxLength&quot;: &quot;{&lt;span/&gt;{ field }} is too long. Try again.&quot;
+  &quot;required&quot;: &quot;{&lt;span&gt;{ field }&lt;/span&gt;} is required. Try again.&quot;,
+  &quot;maxLength&quot;: &quot;{&lt;span&gt;{ field }&lt;/span&gt;} is too long. Try again.&quot;
 }&lt;/pre&gt;
+&lt;p&gt;You can set the following keys (among others):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span&gt;r&lt;/span&gt;equired&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;m&lt;/span&gt;in&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;m&lt;/span&gt;ax&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;m&lt;/span&gt;inLength&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;m&lt;/span&gt;axLength&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;m&lt;/span&gt;inWords&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;m&lt;/span&gt;axWords&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;i&lt;/span&gt;nvalid_email&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;i&lt;/span&gt;nvalid_date&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;i&lt;/span&gt;nvalid_day&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;i&lt;/span&gt;nvalid_regex&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;m&lt;/span&gt;ask&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;p&lt;/span&gt;attern&lt;/li&gt;
+&lt;li&gt;&lt;span&gt;c&lt;/span&gt;ustom&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Depending on the error message some of the following template variables can be used in the script:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;{&lt;span&gt;{ &lt;span&gt;f&lt;/span&gt;ield }&lt;/span&gt;}&lt;/code&gt; is replaced with the label of the field.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;{&lt;span&gt;{ &lt;span&gt;m&lt;/span&gt;in }&lt;/span&gt;}&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;{&lt;span&gt;{ &lt;span&gt;m&lt;/span&gt;ax }&lt;/span&gt;}&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;{&lt;span&gt;{ &lt;span&gt;l&lt;/span&gt;ength }&lt;/span&gt;}&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;{&lt;span&gt;{ &lt;span&gt;p&lt;/span&gt;attern }&lt;/span&gt;}&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;{&lt;span&gt;{ &lt;span&gt;m&lt;/span&gt;inDate }&lt;/span&gt;}&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;{&lt;span&gt;{ &lt;span&gt;m&lt;/span&gt;axDate }&lt;/span&gt;}&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;{&lt;span&gt;{ &lt;span&gt;m&lt;/span&gt;inYear }&lt;/span&gt;}&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;{&lt;span&gt;{ &lt;span&gt;m&lt;/span&gt;axYear }&lt;/span&gt;}&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;{&lt;span&gt;{ &lt;span&gt;r&lt;/span&gt;egex }&lt;/span&gt;}&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;`
+//         content: `
+//           &lt;p&gt;This allows you to set different custom error messages for different errors
+//           (in contrast to &#x201C;Custom Error Message&#x201D;, which only allows you to set one
+//           error message for all errors). E.g.&lt;/p&gt;
 
-          &lt;p&gt;You can set the following keys (among others):&lt;/p&gt;
-          &lt;ul&gt;
-            &lt;li&gt;r&lt;span/&gt;equired&lt;/li&gt;
-            &lt;li&gt;m&lt;span/&gt;in&lt;/li&gt;
-            &lt;li&gt;m&lt;span/&gt;ax&lt;/li&gt;
-            &lt;li&gt;m&lt;span/&gt;inLength&lt;/li&gt;
-            &lt;li&gt;m&lt;span/&gt;axLength&lt;/li&gt;
-            &lt;li&gt;m&lt;span/&gt;inWords&lt;/li&gt;
-            &lt;li&gt;m&lt;span/&gt;axWords&lt;/li&gt;
-            &lt;li&gt;i&lt;span/&gt;nvalid_email&lt;/li&gt;
-            &lt;li&gt;i&lt;span/&gt;nvalid_date&lt;/li&gt;
-            &lt;li&gt;i&lt;span/&gt;nvalid_day&lt;/li&gt;
-            &lt;li&gt;i&lt;span/&gt;nvalid_regex&lt;/li&gt;
-            &lt;li&gt;m&lt;span/&gt;ask&lt;/li&gt;
-            &lt;li&gt;p&lt;span/&gt;attern&lt;/li&gt;
-            &lt;li&gt;c&lt;span/&gt;ustom&lt;/li&gt;
-          &lt;/ul&gt;
+// &lt;pre&gt;{
+//   &quot;required&quot;: &quot;{&lt;span/&gt;{ field }} is required. Try again.&quot;,
+//   &quot;maxLength&quot;: &quot;{&lt;span/&gt;{ field }} is too long. Try again.&quot;
+// }&lt;/pre&gt;
 
-          &lt;p&gt;Depending on the error message some of the following template variables can be used in the script:&lt;/p&gt;
-          &lt;ul&gt;
-           &lt;li&gt;&lt;code&gt;{&lt;span/&gt;{ f&lt;span/&gt;ield }}&lt;/code&gt; is replaced with the label of the field.&lt;/li&gt;
-           &lt;li&gt;&lt;code&gt;{&lt;span/&gt;{ m&lt;span/&gt;in }}&lt;/code&gt;&lt;/li&gt;
-           &lt;li&gt;&lt;code&gt;{&lt;span/&gt;{ m&lt;span/&gt;ax }}&lt;/code&gt;&lt;/li&gt;
-           &lt;li&gt;&lt;code&gt;{&lt;span/&gt;{ l&lt;span/&gt;ength }}&lt;/code&gt;&lt;/li&gt;
-           &lt;li&gt;&lt;code&gt;{&lt;span/&gt;{ p&lt;span/&gt;attern }}&lt;/code&gt;&lt;/li&gt;
-           &lt;li&gt;&lt;code&gt;{&lt;span/&gt;{ m&lt;span/&gt;inDate }}&lt;/code&gt;&lt;/li&gt;
-           &lt;li&gt;&lt;code&gt;{&lt;span/&gt;{ m&lt;span/&gt;axDate }}&lt;/code&gt;&lt;/li&gt;
-           &lt;li&gt;&lt;code&gt;{&lt;span/&gt;{ m&lt;span/&gt;inYear }}&lt;/code&gt;&lt;/li&gt;
-           &lt;li&gt;&lt;code&gt;{&lt;span/&gt;{ m&lt;span/&gt;axYear }}&lt;/code&gt;&lt;/li&gt;
-           &lt;li&gt;&lt;code&gt;{&lt;span/&gt;{ r&lt;span/&gt;egex }}&lt;/code&gt;&lt;/li&gt;
-          &lt;/ul&gt;
-        `
+//           &lt;p&gt;You can set the following keys (among others):&lt;/p&gt;
+//           &lt;ul&gt;
+//             &lt;li&gt;r&lt;span/&gt;equired&lt;/li&gt;
+//             &lt;li&gt;m&lt;span/&gt;in&lt;/li&gt;
+//             &lt;li&gt;m&lt;span/&gt;ax&lt;/li&gt;
+//             &lt;li&gt;m&lt;span/&gt;inLength&lt;/li&gt;
+//             &lt;li&gt;m&lt;span/&gt;axLength&lt;/li&gt;
+//             &lt;li&gt;m&lt;span/&gt;inWords&lt;/li&gt;
+//             &lt;li&gt;m&lt;span/&gt;axWords&lt;/li&gt;
+//             &lt;li&gt;i&lt;span/&gt;nvalid_email&lt;/li&gt;
+//             &lt;li&gt;i&lt;span/&gt;nvalid_date&lt;/li&gt;
+//             &lt;li&gt;i&lt;span/&gt;nvalid_day&lt;/li&gt;
+//             &lt;li&gt;i&lt;span/&gt;nvalid_regex&lt;/li&gt;
+//             &lt;li&gt;m&lt;span/&gt;ask&lt;/li&gt;
+//             &lt;li&gt;p&lt;span/&gt;attern&lt;/li&gt;
+//             &lt;li&gt;c&lt;span/&gt;ustom&lt;/li&gt;
+//           &lt;/ul&gt;
+
+//           &lt;p&gt;Depending on the error message some of the following template variables can be used in the script:&lt;/p&gt;
+//           &lt;ul&gt;
+//            &lt;li&gt;&lt;code&gt;{&lt;span/&gt;{ f&lt;span/&gt;ield }}&lt;/code&gt; is replaced with the label of the field.&lt;/li&gt;
+//            &lt;li&gt;&lt;code&gt;{&lt;span/&gt;{ m&lt;span/&gt;in }}&lt;/code&gt;&lt;/li&gt;
+//            &lt;li&gt;&lt;code&gt;{&lt;span/&gt;{ m&lt;span/&gt;ax }}&lt;/code&gt;&lt;/li&gt;
+//            &lt;li&gt;&lt;code&gt;{&lt;span/&gt;{ l&lt;span/&gt;ength }}&lt;/code&gt;&lt;/li&gt;
+//            &lt;li&gt;&lt;code&gt;{&lt;span/&gt;{ p&lt;span/&gt;attern }}&lt;/code&gt;&lt;/li&gt;
+//            &lt;li&gt;&lt;code&gt;{&lt;span/&gt;{ m&lt;span/&gt;inDate }}&lt;/code&gt;&lt;/li&gt;
+//            &lt;li&gt;&lt;code&gt;{&lt;span/&gt;{ m&lt;span/&gt;axDate }}&lt;/code&gt;&lt;/li&gt;
+//            &lt;li&gt;&lt;code&gt;{&lt;span/&gt;{ m&lt;span/&gt;inYear }}&lt;/code&gt;&lt;/li&gt;
+//            &lt;li&gt;&lt;code&gt;{&lt;span/&gt;{ m&lt;span/&gt;axYear }}&lt;/code&gt;&lt;/li&gt;
+//            &lt;li&gt;&lt;code&gt;{&lt;span/&gt;{ r&lt;span/&gt;egex }}&lt;/code&gt;&lt;/li&gt;
+//           &lt;/ul&gt;
+//         `
       }
     ]
   }

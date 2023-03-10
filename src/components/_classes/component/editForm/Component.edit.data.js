@@ -18,85 +18,85 @@ export default [
     tooltip: 'The Default Value will be the value for this field, before user interaction. Having a default value will override the placeholder text.',
     input: true
   },
-  {
-    weight: 30,
-    type: 'radio',
-    label: 'Persistent',
-    tooltip: 'A persistent field will be stored in database when the form is submitted.',
-    key: 'persistent',
-    input: true,
-    inline: true,
-    defaultValue: true,
-    values: [
-      { label: 'None', value: false },
-      { label: 'Server', value: true },
-      { label: 'Client', value: 'client-only' },
-    ]
-  },
-  {
-    weight: 150,
-    type: 'checkbox',
-    label: 'Protected',
-    tooltip: 'A protected field will not be returned when queried via API.',
-    key: 'protected',
-    input: true
-  },
-  {
-    type: 'checkbox',
-    input: true,
-    weight: 200,
-    key: 'dbIndex',
-    label: 'Database Index',
-    tooltip: 'Set this field as an index within the database. Increases performance for submission queries.'
-  },
-  {
-    weight: 400,
-    type: 'checkbox',
-    label: 'Encrypted (Enterprise Only)',
-    tooltip: 'Encrypt this field on the server. This is two way encryption which is not suitable for passwords.',
-    key: 'encrypted',
-    input: true,
-    logic: [
-      {
-        name:'disabled',
-        trigger:{
-          type:'javascript',
-          javascript:'result = !instance.root.options.sac;'
-        },
-        actions:[
-          {
-            name:'disabled',
-            type:'property',
-            property:{
-              label:'Disabled',
-              value:'disabled',
-              type:'boolean'
-            },
-            state:true
-          }
-        ]
-      },
-      {
-        name:'disabledToolTip',
-        trigger:{
-          type:'javascript',
-          javascript:'result = !instance.root.options.sac;'
-        },
-        actions:[
-          {
-            name:'addDisabledTooltip',
-            type:'property',
-            property:{
-              label:'Tooltip',
-              value:'tooltip',
-              type:'string'
-            },
-            text:'Encryption is not available with your current plan. Please contact sales@form.io.'
-          }
-        ]
-      }
-    ]
-  },
+  // {
+  //   weight: 30,
+  //   type: 'radio',
+  //   label: 'Persistent',
+  //   tooltip: 'A persistent field will be stored in database when the form is submitted.',
+  //   key: 'persistent',
+  //   input: true,
+  //   inline: true,
+  //   defaultValue: true,
+  //   values: [
+  //     { label: 'None', value: false },
+  //     { label: 'Server', value: true },
+  //     { label: 'Client', value: 'client-only' },
+  //   ]
+  // },
+  // {
+  //   weight: 150,
+  //   type: 'checkbox',
+  //   label: 'Protected',
+  //   tooltip: 'A protected field will not be returned when queried via API.',
+  //   key: 'protected',
+  //   input: true
+  // },
+  // {
+  //   type: 'checkbox',
+  //   input: true,
+  //   weight: 200,
+  //   key: 'dbIndex',
+  //   label: 'Database Index',
+  //   tooltip: 'Set this field as an index within the database. Increases performance for submission queries.'
+  // },
+  // {
+  //   weight: 400,
+  //   type: 'checkbox',
+  //   label: 'Encrypted (Enterprise Only)',
+  //   tooltip: 'Encrypt this field on the server. This is two way encryption which is not suitable for passwords.',
+  //   key: 'encrypted',
+  //   input: true,
+  //   logic: [
+  //     {
+  //       name:'disabled',
+  //       trigger:{
+  //         type:'javascript',
+  //         javascript:'result = !instance.root.options.sac;'
+  //       },
+  //       actions:[
+  //         {
+  //           name:'disabled',
+  //           type:'property',
+  //           property:{
+  //             label:'Disabled',
+  //             value:'disabled',
+  //             type:'boolean'
+  //           },
+  //           state:true
+  //         }
+  //       ]
+  //     },
+  //     {
+  //       name:'disabledToolTip',
+  //       trigger:{
+  //         type:'javascript',
+  //         javascript:'result = !instance.root.options.sac;'
+  //       },
+  //       actions:[
+  //         {
+  //           name:'addDisabledTooltip',
+  //           type:'property',
+  //           property:{
+  //             label:'Tooltip',
+  //             value:'tooltip',
+  //             type:'string'
+  //           },
+  //           text:'Encryption is not available with your current plan. Please contact sales@form.io.'
+  //         }
+  //       ]
+  //     }
+  //   ]
+  // },
   {
     type: 'select',
     input: true,

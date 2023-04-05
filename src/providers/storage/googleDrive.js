@@ -41,8 +41,9 @@ const googledrive = (formio) => ({
       };
 
       xhr.onabort = reject;
-
-      xhr.open('POST', `${formio.formUrl}/storage/gdrive`);
+      
+      xhr.open('POST', './gdrive.xsp');
+      //xhr.open('POST', `${formio.formUrl}/storage/gdrive`);
 
       setXhrHeaders(formio, xhr);
 
@@ -55,8 +56,8 @@ const googledrive = (formio) => ({
   },
   downloadFile(file) {
     const token = formio.getToken();
-    file.url =
-      `${formio.formUrl}/storage/gdrive?fileId=${file.id}&fileName=${file.originalName}${token ? `&x-jwt-token=${token}` : ''}`;
+    file.url = `./gdrive.xsp?fid=${file.id}`;
+      //`${formio.formUrl}/storage/gdrive?fileId=${file.id}&fileName=${file.originalName}${token ? `&x-jwt-token=${token}` : ''}`;
     return NativePromise.resolve(file);
   }
 });

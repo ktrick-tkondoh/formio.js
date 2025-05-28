@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## 4.14.10.ktrick.2-2024.05.21
+
+- dist をアップデート
+
 ## 4.14.10.ktrick.1
 ### Changed
 

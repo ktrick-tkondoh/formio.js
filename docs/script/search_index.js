@@ -816,6 +816,12 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "formiojs/src/providers/storage/urlgoogledrive.js~urlgoogledrive",
+    "function/index.html#static-function-urlGoogleDrive",
+    "<span>urlGoogleDrive</span> <span class=\"search-result-import-path\">formiojs/src/providers/storage/urlGoogleDrive.js</span>",
+    "function"
+  ],
+  [
     "src/.external-ecmascript.js~array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
     "src/.external-ecmascript.js~Array",
@@ -7647,6 +7653,12 @@ window.esdocSearchIndex = [
     "src/providers/storage/url.js",
     "file/src/providers/storage/url.js.html",
     "src/providers/storage/url.js",
+    "file"
+  ],
+  [
+    "src/providers/storage/urlgoogledrive.js",
+    "file/src/providers/storage/urlGoogleDrive.js.html",
+    "src/providers/storage/urlGoogleDrive.js",
     "file"
   ],
   [

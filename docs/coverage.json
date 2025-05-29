@@ -1,6 +1,6 @@
 {
-  "coverage": "6.53%",
-  "expectCount": 980,
+  "coverage": "6.52%",
+  "expectCount": 981,
   "actualCount": 64,
   "files": {
     "src/Embed.js": {
@@ -1325,6 +1325,13 @@
       ]
     },
     "src/providers/storage/url.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        3
+      ]
+    },
+    "src/providers/storage/urlGoogleDrive.js": {
       "expectCount": 1,
       "actualCount": 0,
       "undocumentLines": [

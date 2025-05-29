@@ -1,28 +1,28 @@
 {
   "type": "File",
   "start": 0,
-  "end": 266,
+  "end": 355,
   "loc": {
     "start": {
       "line": 1,
       "column": 0
     },
     "end": {
-      "line": 16,
+      "line": 18,
       "column": 0
     }
   },
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 266,
+    "end": 355,
     "loc": {
       "start": {
         "line": 1,
         "column": 0
       },
       "end": {
-        "line": 16,
+        "line": 18,
         "column": 0
       }
     },
@@ -95,150 +95,46 @@
             "raw": "'./base64'"
           },
           "value": "./base64"
-        }
-      },
-      {
-        "type": "ImportDeclaration",
-        "start": 31,
-        "end": 53,
-        "loc": {
-          "start": {
-            "line": 2,
-            "column": 0
-          },
-          "end": {
-            "line": 2,
-            "column": 22
-          }
         },
-        "specifiers": [
+        "trailingComments": [
           {
-            "type": "ImportDefaultSpecifier",
-            "start": 38,
-            "end": 40,
+            "type": "CommentLine",
+            "value": " import s3 from './s3';",
+            "start": 31,
+            "end": 56,
             "loc": {
               "start": {
                 "line": 2,
-                "column": 7
+                "column": 0
               },
               "end": {
                 "line": 2,
-                "column": 9
+                "column": 25
               }
-            },
-            "local": {
-              "type": "Identifier",
-              "start": 38,
-              "end": 40,
-              "loc": {
-                "start": {
-                  "line": 2,
-                  "column": 7
-                },
-                "end": {
-                  "line": 2,
-                  "column": 9
-                },
-                "identifierName": "s3"
-              },
-              "name": "s3"
-            }
-          }
-        ],
-        "source": {
-          "type": "StringLiteral",
-          "start": 46,
-          "end": 52,
-          "loc": {
-            "start": {
-              "line": 2,
-              "column": 15
-            },
-            "end": {
-              "line": 2,
-              "column": 21
             }
           },
-          "extra": {
-            "rawValue": "./s3",
-            "raw": "'./s3'"
-          },
-          "value": "./s3"
-        }
-      },
-      {
-        "type": "ImportDeclaration",
-        "start": 54,
-        "end": 82,
-        "loc": {
-          "start": {
-            "line": 3,
-            "column": 0
-          },
-          "end": {
-            "line": 3,
-            "column": 28
-          }
-        },
-        "specifiers": [
           {
-            "type": "ImportDefaultSpecifier",
-            "start": 61,
-            "end": 66,
+            "type": "CommentLine",
+            "value": " import azure from './azure';",
+            "start": 57,
+            "end": 88,
             "loc": {
               "start": {
                 "line": 3,
-                "column": 7
+                "column": 0
               },
               "end": {
                 "line": 3,
-                "column": 12
+                "column": 31
               }
-            },
-            "local": {
-              "type": "Identifier",
-              "start": 61,
-              "end": 66,
-              "loc": {
-                "start": {
-                  "line": 3,
-                  "column": 7
-                },
-                "end": {
-                  "line": 3,
-                  "column": 12
-                },
-                "identifierName": "azure"
-              },
-              "name": "azure"
             }
           }
-        ],
-        "source": {
-          "type": "StringLiteral",
-          "start": 72,
-          "end": 81,
-          "loc": {
-            "start": {
-              "line": 3,
-              "column": 18
-            },
-            "end": {
-              "line": 3,
-              "column": 27
-            }
-          },
-          "extra": {
-            "rawValue": "./azure",
-            "raw": "'./azure'"
-          },
-          "value": "./azure"
-        }
+        ]
       },
       {
         "type": "ImportDeclaration",
-        "start": 83,
-        "end": 107,
+        "start": 89,
+        "end": 113,
         "loc": {
           "start": {
             "line": 4,
@@ -252,8 +148,8 @@
         "specifiers": [
           {
             "type": "ImportDefaultSpecifier",
-            "start": 90,
-            "end": 93,
+            "start": 96,
+            "end": 99,
             "loc": {
               "start": {
                 "line": 4,
@@ -266,8 +162,8 @@
             },
             "local": {
               "type": "Identifier",
-              "start": 90,
-              "end": 93,
+              "start": 96,
+              "end": 99,
               "loc": {
                 "start": {
                   "line": 4,
@@ -279,14 +175,16 @@
                 },
                 "identifierName": "url"
               },
-              "name": "url"
-            }
+              "name": "url",
+              "leadingComments": null
+            },
+            "leadingComments": null
           }
         ],
         "source": {
           "type": "StringLiteral",
-          "start": 99,
-          "end": 106,
+          "start": 105,
+          "end": 112,
           "loc": {
             "start": {
               "line": 4,
@@ -302,12 +200,46 @@
             "raw": "'./url'"
           },
           "value": "./url"
-        }
+        },
+        "leadingComments": [
+          {
+            "type": "CommentLine",
+            "value": " import s3 from './s3';",
+            "start": 31,
+            "end": 56,
+            "loc": {
+              "start": {
+                "line": 2,
+                "column": 0
+              },
+              "end": {
+                "line": 2,
+                "column": 25
+              }
+            }
+          },
+          {
+            "type": "CommentLine",
+            "value": " import azure from './azure';",
+            "start": 57,
+            "end": 88,
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 0
+              },
+              "end": {
+                "line": 3,
+                "column": 31
+              }
+            }
+          }
+        ]
       },
       {
         "type": "ImportDeclaration",
-        "start": 108,
-        "end": 144,
+        "start": 114,
+        "end": 160,
         "loc": {
           "start": {
             "line": 5,
@@ -315,14 +247,14 @@
           },
           "end": {
             "line": 5,
-            "column": 36
+            "column": 46
           }
         },
         "specifiers": [
           {
             "type": "ImportDefaultSpecifier",
-            "start": 115,
-            "end": 124,
+            "start": 121,
+            "end": 135,
             "loc": {
               "start": {
                 "line": 5,
@@ -330,13 +262,13 @@
               },
               "end": {
                 "line": 5,
-                "column": 16
+                "column": 21
               }
             },
             "local": {
               "type": "Identifier",
-              "start": 115,
-              "end": 124,
+              "start": 121,
+              "end": 135,
               "loc": {
                 "start": {
                   "line": 5,
@@ -344,144 +276,109 @@
                 },
                 "end": {
                   "line": 5,
-                  "column": 16
+                  "column": 21
                 },
-                "identifierName": "indexeddb"
+                "identifierName": "urlGoogleDrive"
               },
-              "name": "indexeddb"
+              "name": "urlGoogleDrive"
             }
           }
         ],
         "source": {
           "type": "StringLiteral",
-          "start": 130,
-          "end": 143,
+          "start": 141,
+          "end": 159,
           "loc": {
             "start": {
               "line": 5,
-              "column": 22
+              "column": 27
             },
             "end": {
               "line": 5,
-              "column": 35
+              "column": 45
             }
           },
           "extra": {
-            "rawValue": "./indexeddb",
-            "raw": "'./indexeddb'"
+            "rawValue": "./urlGoogleDrive",
+            "raw": "'./urlGoogleDrive'"
           },
-          "value": "./indexeddb"
-        }
-      },
-      {
-        "type": "ImportDeclaration",
-        "start": 145,
-        "end": 185,
-        "loc": {
-          "start": {
-            "line": 6,
-            "column": 0
-          },
-          "end": {
-            "line": 6,
-            "column": 40
-          }
+          "value": "./urlGoogleDrive"
         },
-        "specifiers": [
+        "trailingComments": [
           {
-            "type": "ImportDefaultSpecifier",
-            "start": 152,
-            "end": 163,
+            "type": "CommentLine",
+            "value": " import indexeddb from './indexeddb';",
+            "start": 161,
+            "end": 200,
             "loc": {
               "start": {
                 "line": 6,
-                "column": 7
+                "column": 0
               },
               "end": {
                 "line": 6,
-                "column": 18
+                "column": 39
               }
-            },
-            "local": {
-              "type": "Identifier",
-              "start": 152,
-              "end": 163,
-              "loc": {
-                "start": {
-                  "line": 6,
-                  "column": 7
-                },
-                "end": {
-                  "line": 6,
-                  "column": 18
-                },
-                "identifierName": "googledrive"
+            }
+          },
+          {
+            "type": "CommentLine",
+            "value": " import googledrive from './googleDrive';",
+            "start": 201,
+            "end": 244,
+            "loc": {
+              "start": {
+                "line": 7,
+                "column": 0
               },
-              "name": "googledrive"
+              "end": {
+                "line": 7,
+                "column": 43
+              }
             }
           }
-        ],
-        "source": {
-          "type": "StringLiteral",
-          "start": 169,
-          "end": 184,
-          "loc": {
-            "start": {
-              "line": 6,
-              "column": 24
-            },
-            "end": {
-              "line": 6,
-              "column": 39
-            }
-          },
-          "extra": {
-            "rawValue": "./googleDrive",
-            "raw": "'./googleDrive'"
-          },
-          "value": "./googleDrive"
-        }
+        ]
       },
       {
         "type": "ExportDefaultDeclaration",
-        "start": 187,
-        "end": 265,
+        "start": 246,
+        "end": 354,
         "loc": {
           "start": {
-            "line": 8,
+            "line": 9,
             "column": 0
           },
           "end": {
-            "line": 15,
+            "line": 17,
             "column": 2
           }
         },
         "declaration": {
           "type": "ObjectExpression",
-          "start": 202,
-          "end": 264,
+          "start": 261,
+          "end": 353,
           "loc": {
             "start": {
-              "line": 8,
+              "line": 9,
               "column": 15
             },
             "end": {
-              "line": 15,
+              "line": 17,
               "column": 1
             }
           },
           "properties": [
             {
               "type": "ObjectProperty",
-              "start": 206,
-              "end": 212,
+              "start": 265,
+              "end": 271,
               "loc": {
                 "start": {
-                  "line": 9,
+                  "line": 10,
                   "column": 2
                 },
                 "end": {
-                  "line": 9,
+                  "line": 10,
                   "column": 8
                 }
               },
@@ -490,108 +387,55 @@
               "computed": false,
               "key": {
                 "type": "Identifier",
-                "start": 206,
-                "end": 212,
+                "start": 265,
+                "end": 271,
                 "loc": {
                   "start": {
-                    "line": 9,
+                    "line": 10,
                     "column": 2
                   },
                   "end": {
-                    "line": 9,
+                    "line": 10,
+                    "column": 8
+                  },
+                  "identifierName": "base64"
+                },
+                "name": "base64",
+                "leadingComments": null
+              },
+              "value": {
+                "type": "Identifier",
+                "start": 265,
+                "end": 271,
+                "loc": {
+                  "start": {
+                    "line": 10,
+                    "column": 2
+                  },
+                  "end": {
+                    "line": 10,
                     "column": 8
                   },
                   "identifierName": "base64"
                 },
                 "name": "base64"
               },
-              "value": {
-                "type": "Identifier",
-                "start": 206,
-                "end": 212,
-                "loc": {
-                  "start": {
-                    "line": 9,
-                    "column": 2
-                  },
-                  "end": {
-                    "line": 9,
-                    "column": 8
-                  },
-                  "identifierName": "base64"
-                },
-                "name": "base64"
-              },
+              "leadingComments": null,
               "extra": {
                 "shorthand": true
               }
             },
             {
               "type": "ObjectProperty",
-              "start": 216,
-              "end": 218,
+              "start": 284,
+              "end": 287,
               "loc": {
                 "start": {
-                  "line": 10,
+                  "line": 12,
                   "column": 2
                 },
                 "end": {
-                  "line": 10,
-                  "column": 4
-                }
-              },
-              "method": false,
-              "shorthand": true,
-              "computed": false,
-              "key": {
-                "type": "Identifier",
-                "start": 216,
-                "end": 218,
-                "loc": {
-                  "start": {
-                    "line": 10,
-                    "column": 2
-                  },
-                  "end": {
-                    "line": 10,
-                    "column": 4
-                  },
-                  "identifierName": "s3"
-                },
-                "name": "s3"
-              },
-              "value": {
-                "type": "Identifier",
-                "start": 216,
-                "end": 218,
-                "loc": {
-                  "start": {
-                    "line": 10,
-                    "column": 2
-                  },
-                  "end": {
-                    "line": 10,
-                    "column": 4
-                  },
-                  "identifierName": "s3"
-                },
-                "name": "s3"
-              },
-              "extra": {
-                "shorthand": true
-              }
-            },
-            {
-              "type": "ObjectProperty",
-              "start": 222,
-              "end": 225,
-              "loc": {
-                "start": {
-                  "line": 11,
-                  "column": 2
-                },
-                "end": {
-                  "line": 11,
+                  "line": 12,
                   "column": 5
                 }
               },
@@ -600,101 +444,65 @@
               "computed": false,
               "key": {
                 "type": "Identifier",
-                "start": 222,
-                "end": 225,
+                "start": 284,
+                "end": 287,
                 "loc": {
                   "start": {
-                    "line": 11,
+                    "line": 12,
                     "column": 2
                   },
                   "end": {
-                    "line": 11,
+                    "line": 12,
                     "column": 5
                   },
                   "identifierName": "url"
                 },
-                "name": "url"
+                "name": "url",
+                "leadingComments": null
               },
               "value": {
                 "type": "Identifier",
-                "start": 222,
-                "end": 225,
+                "start": 284,
+                "end": 287,
                 "loc": {
                   "start": {
-                    "line": 11,
+                    "line": 12,
                     "column": 2
                   },
                   "end": {
-                    "line": 11,
+                    "line": 12,
                     "column": 5
                   },
                   "identifierName": "url"
                 },
                 "name": "url"
               },
-              "extra": {
-                "shorthand": true
-              }
-            },
-            {
-              "type": "ObjectProperty",
-              "start": 229,
-              "end": 234,
-              "loc": {
-                "start": {
-                  "line": 12,
-                  "column": 2
-                },
-                "end": {
-                  "line": 12,
-                  "column": 7
+              "leadingComments": [
+                {
+                  "type": "CommentLine",
+                  "value": " s3,",
+                  "start": 275,
+                  "end": 281,
+                  "loc": {
+                    "start": {
+                      "line": 11,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 11,
+                      "column": 8
+                    }
+                  }
                 }
-              },
-              "method": false,
-              "shorthand": true,
-              "computed": false,
-              "key": {
-                "type": "Identifier",
-                "start": 229,
-                "end": 234,
-                "loc": {
-                  "start": {
-                    "line": 12,
-                    "column": 2
-                  },
-                  "end": {
-                    "line": 12,
-                    "column": 7
-                  },
-                  "identifierName": "azure"
-                },
-                "name": "azure"
-              },
-              "value": {
-                "type": "Identifier",
-                "start": 229,
-                "end": 234,
-                "loc": {
-                  "start": {
-                    "line": 12,
-                    "column": 2
-                  },
-                  "end": {
-                    "line": 12,
-                    "column": 7
-                  },
-                  "identifierName": "azure"
-                },
-                "name": "azure"
-              },
+              ],
               "extra": {
                 "shorthand": true
               }
             },
             {
               "type": "ObjectProperty",
-              "start": 238,
-              "end": 247,
+              "start": 291,
+              "end": 305,
               "loc": {
                 "start": {
                   "line": 13,
@@ -702,7 +510,7 @@
                 },
                 "end": {
                   "line": 13,
-                  "column": 11
+                  "column": 16
                 }
               },
               "method": false,
@@ -710,8 +518,8 @@
               "computed": false,
               "key": {
                 "type": "Identifier",
-                "start": 238,
-                "end": 247,
+                "start": 291,
+                "end": 305,
                 "loc": {
                   "start": {
                     "line": 13,
@@ -719,16 +527,16 @@
                   },
                   "end": {
                     "line": 13,
-                    "column": 11
+                    "column": 16
                   },
-                  "identifierName": "indexeddb"
+                  "identifierName": "urlGoogleDrive"
                 },
-                "name": "indexeddb"
+                "name": "urlGoogleDrive"
               },
               "value": {
                 "type": "Identifier",
-                "start": 238,
-                "end": 247,
+                "start": 291,
+                "end": 305,
                 "loc": {
                   "start": {
                     "line": 13,
@@ -736,80 +544,271 @@
                   },
                   "end": {
                     "line": 13,
-                    "column": 11
+                    "column": 16
                   },
-                  "identifierName": "indexeddb"
+                  "identifierName": "urlGoogleDrive"
                 },
-                "name": "indexeddb"
+                "name": "urlGoogleDrive"
               },
               "extra": {
                 "shorthand": true
+              },
+              "trailingComments": [
+                {
+                  "type": "CommentLine",
+                  "value": " azure,",
+                  "start": 309,
+                  "end": 318,
+                  "loc": {
+                    "start": {
+                      "line": 14,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 14,
+                      "column": 11
+                    }
+                  }
+                },
+                {
+                  "type": "CommentLine",
+                  "value": " indexeddb,",
+                  "start": 321,
+                  "end": 334,
+                  "loc": {
+                    "start": {
+                      "line": 15,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 15,
+                      "column": 15
+                    }
+                  }
+                },
+                {
+                  "type": "CommentLine",
+                  "value": " googledrive",
+                  "start": 337,
+                  "end": 351,
+                  "loc": {
+                    "start": {
+                      "line": 16,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 16,
+                      "column": 16
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "leadingComments": [
+            {
+              "type": "CommentLine",
+              "value": " import indexeddb from './indexeddb';",
+              "start": 161,
+              "end": 200,
+              "loc": {
+                "start": {
+                  "line": 6,
+                  "column": 0
+                },
+                "end": {
+                  "line": 6,
+                  "column": 39
+                }
               }
             },
             {
-              "type": "ObjectProperty",
-              "start": 251,
-              "end": 262,
+              "type": "CommentLine",
+              "value": " import googledrive from './googleDrive';",
+              "start": 201,
+              "end": 244,
               "loc": {
                 "start": {
-                  "line": 14,
-                  "column": 2
+                  "line": 7,
+                  "column": 0
                 },
                 "end": {
-                  "line": 14,
-                  "column": 13
+                  "line": 7,
+                  "column": 43
                 }
-              },
-              "method": false,
-              "shorthand": true,
-              "computed": false,
-              "key": {
-                "type": "Identifier",
-                "start": 251,
-                "end": 262,
-                "loc": {
-                  "start": {
-                    "line": 14,
-                    "column": 2
-                  },
-                  "end": {
-                    "line": 14,
-                    "column": 13
-                  },
-                  "identifierName": "googledrive"
-                },
-                "name": "googledrive"
-              },
-              "value": {
-                "type": "Identifier",
-                "start": 251,
-                "end": 262,
-                "loc": {
-                  "start": {
-                    "line": 14,
-                    "column": 2
-                  },
-                  "end": {
-                    "line": 14,
-                    "column": 13
-                  },
-                  "identifierName": "googledrive"
-                },
-                "name": "googledrive"
-              },
-              "extra": {
-                "shorthand": true
               }
             }
           ],
-          "leadingComments": [],
           "trailingComments": []
-        }
+        },
+        "leadingComments": [
+          {
+            "type": "CommentLine",
+            "value": " import indexeddb from './indexeddb';",
+            "start": 161,
+            "end": 200,
+            "loc": {
+              "start": {
+                "line": 6,
+                "column": 0
+              },
+              "end": {
+                "line": 6,
+                "column": 39
+              }
+            }
+          },
+          {
+            "type": "CommentLine",
+            "value": " import googledrive from './googleDrive';",
+            "start": 201,
+            "end": 244,
+            "loc": {
+              "start": {
+                "line": 7,
+                "column": 0
+              },
+              "end": {
+                "line": 7,
+                "column": 43
+              }
+            }
+          }
+        ]
       }
     ],
     "directives": []
   },
-  "comments": [],
+  "comments": [
+    {
+      "type": "CommentLine",
+      "value": " import s3 from './s3';",
+      "start": 31,
+      "end": 56,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 0
+        },
+        "end": {
+          "line": 2,
+          "column": 25
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " import azure from './azure';",
+      "start": 57,
+      "end": 88,
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 0
+        },
+        "end": {
+          "line": 3,
+          "column": 31
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " import indexeddb from './indexeddb';",
+      "start": 161,
+      "end": 200,
+      "loc": {
+        "start": {
+          "line": 6,
+          "column": 0
+        },
+        "end": {
+          "line": 6,
+          "column": 39
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " import googledrive from './googleDrive';",
+      "start": 201,
+      "end": 244,
+      "loc": {
+        "start": {
+          "line": 7,
+          "column": 0
+        },
+        "end": {
+          "line": 7,
+          "column": 43
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " s3,",
+      "start": 275,
+      "end": 281,
+      "loc": {
+        "start": {
+          "line": 11,
+          "column": 2
+        },
+        "end": {
+          "line": 11,
+          "column": 8
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " azure,",
+      "start": 309,
+      "end": 318,
+      "loc": {
+        "start": {
+          "line": 14,
+          "column": 2
+        },
+        "end": {
+          "line": 14,
+          "column": 11
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " indexeddb,",
+      "start": 321,
+      "end": 334,
+      "loc": {
+        "start": {
+          "line": 15,
+          "column": 2
+        },
+        "end": {
+          "line": 15,
+          "column": 15
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " googledrive",
+      "start": 337,
+      "end": 351,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 2
+        },
+        "end": {
+          "line": 16,
+          "column": 16
+        }
+      }
+    }
+  ],
   "tokens": [
     {
       "type": {
@@ -945,22 +944,10 @@
       }
     },
     {
-      "type": {
-        "label": "import",
-        "keyword": "import",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null,
-        "updateContext": null
-      },
-      "value": "import",
+      "type": "CommentLine",
+      "value": " import s3 from './s3';",
       "start": 31,
-      "end": 37,
+      "end": 56,
       "loc": {
         "start": {
           "line": 2,
@@ -968,112 +955,23 @@
         },
         "end": {
           "line": 2,
-          "column": 6
+          "column": 25
         }
       }
     },
     {
-      "type": {
-        "label": "name",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "value": "s3",
-      "start": 38,
-      "end": 40,
+      "type": "CommentLine",
+      "value": " import azure from './azure';",
+      "start": 57,
+      "end": 88,
       "loc": {
         "start": {
-          "line": 2,
-          "column": 7
+          "line": 3,
+          "column": 0
         },
         "end": {
-          "line": 2,
-          "column": 9
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "name",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "value": "from",
-      "start": 41,
-      "end": 45,
-      "loc": {
-        "start": {
-          "line": 2,
-          "column": 10
-        },
-        "end": {
-          "line": 2,
-          "column": 14
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "string",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null,
-        "updateContext": null
-      },
-      "value": "./s3",
-      "start": 46,
-      "end": 52,
-      "loc": {
-        "start": {
-          "line": 2,
-          "column": 15
-        },
-        "end": {
-          "line": 2,
-          "column": 21
-        }
-      }
-    },
-    {
-      "type": {
-        "label": ";",
-        "beforeExpr": true,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null,
-        "updateContext": null
-      },
-      "start": 52,
-      "end": 53,
-      "loc": {
-        "start": {
-          "line": 2,
-          "column": 21
-        },
-        "end": {
-          "line": 2,
-          "column": 22
+          "line": 3,
+          "column": 31
         }
       }
     },
@@ -1092,141 +990,8 @@
         "updateContext": null
       },
       "value": "import",
-      "start": 54,
-      "end": 60,
-      "loc": {
-        "start": {
-          "line": 3,
-          "column": 0
-        },
-        "end": {
-          "line": 3,
-          "column": 6
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "name",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "value": "azure",
-      "start": 61,
-      "end": 66,
-      "loc": {
-        "start": {
-          "line": 3,
-          "column": 7
-        },
-        "end": {
-          "line": 3,
-          "column": 12
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "name",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "value": "from",
-      "start": 67,
-      "end": 71,
-      "loc": {
-        "start": {
-          "line": 3,
-          "column": 13
-        },
-        "end": {
-          "line": 3,
-          "column": 17
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "string",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null,
-        "updateContext": null
-      },
-      "value": "./azure",
-      "start": 72,
-      "end": 81,
-      "loc": {
-        "start": {
-          "line": 3,
-          "column": 18
-        },
-        "end": {
-          "line": 3,
-          "column": 27
-        }
-      }
-    },
-    {
-      "type": {
-        "label": ";",
-        "beforeExpr": true,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null,
-        "updateContext": null
-      },
-      "start": 81,
-      "end": 82,
-      "loc": {
-        "start": {
-          "line": 3,
-          "column": 27
-        },
-        "end": {
-          "line": 3,
-          "column": 28
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "import",
-        "keyword": "import",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null,
-        "updateContext": null
-      },
-      "value": "import",
-      "start": 83,
-      "end": 89,
+      "start": 89,
+      "end": 95,
       "loc": {
         "start": {
           "line": 4,
@@ -1251,8 +1016,8 @@
         "binop": null
       },
       "value": "url",
-      "start": 90,
-      "end": 93,
+      "start": 96,
+      "end": 99,
       "loc": {
         "start": {
           "line": 4,
@@ -1277,8 +1042,8 @@
         "binop": null
       },
       "value": "from",
-      "start": 94,
-      "end": 98,
+      "start": 100,
+      "end": 104,
       "loc": {
         "start": {
           "line": 4,
@@ -1304,8 +1069,8 @@
         "updateContext": null
       },
       "value": "./url",
-      "start": 99,
-      "end": 106,
+      "start": 105,
+      "end": 112,
       "loc": {
         "start": {
           "line": 4,
@@ -1330,8 +1095,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 106,
-      "end": 107,
+      "start": 112,
+      "end": 113,
       "loc": {
         "start": {
           "line": 4,
@@ -1358,8 +1123,8 @@
         "updateContext": null
       },
       "value": "import",
-      "start": 108,
-      "end": 114,
+      "start": 114,
+      "end": 120,
       "loc": {
         "start": {
           "line": 5,
@@ -1383,39 +1148,13 @@
         "postfix": false,
         "binop": null
       },
-      "value": "indexeddb",
-      "start": 115,
-      "end": 124,
+      "value": "urlGoogleDrive",
+      "start": 121,
+      "end": 135,
       "loc": {
         "start": {
           "line": 5,
           "column": 7
-        },
-        "end": {
-          "line": 5,
-          "column": 16
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "name",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "value": "from",
-      "start": 125,
-      "end": 129,
-      "loc": {
-        "start": {
-          "line": 5,
-          "column": 17
         },
         "end": {
           "line": 5,
@@ -1425,113 +1164,6 @@
     },
     {
       "type": {
-        "label": "string",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null,
-        "updateContext": null
-      },
-      "value": "./indexeddb",
-      "start": 130,
-      "end": 143,
-      "loc": {
-        "start": {
-          "line": 5,
-          "column": 22
-        },
-        "end": {
-          "line": 5,
-          "column": 35
-        }
-      }
-    },
-    {
-      "type": {
-        "label": ";",
-        "beforeExpr": true,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null,
-        "updateContext": null
-      },
-      "start": 143,
-      "end": 144,
-      "loc": {
-        "start": {
-          "line": 5,
-          "column": 35
-        },
-        "end": {
-          "line": 5,
-          "column": 36
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "import",
-        "keyword": "import",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null,
-        "updateContext": null
-      },
-      "value": "import",
-      "start": 145,
-      "end": 151,
-      "loc": {
-        "start": {
-          "line": 6,
-          "column": 0
-        },
-        "end": {
-          "line": 6,
-          "column": 6
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "name",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "value": "googledrive",
-      "start": 152,
-      "end": 163,
-      "loc": {
-        "start": {
-          "line": 6,
-          "column": 7
-        },
-        "end": {
-          "line": 6,
-          "column": 18
-        }
-      }
-    },
-    {
-      "type": {
         "label": "name",
         "beforeExpr": false,
         "startsExpr": true,
@@ -1543,16 +1175,16 @@
         "binop": null
       },
       "value": "from",
-      "start": 164,
-      "end": 168,
+      "start": 136,
+      "end": 140,
       "loc": {
         "start": {
-          "line": 6,
-          "column": 19
+          "line": 5,
+          "column": 22
         },
         "end": {
-          "line": 6,
-          "column": 23
+          "line": 5,
+          "column": 26
         }
       }
     },
@@ -1569,17 +1201,17 @@
         "binop": null,
         "updateContext": null
       },
-      "value": "./googleDrive",
-      "start": 169,
-      "end": 184,
+      "value": "./urlGoogleDrive",
+      "start": 141,
+      "end": 159,
       "loc": {
         "start": {
-          "line": 6,
-          "column": 24
+          "line": 5,
+          "column": 27
         },
         "end": {
-          "line": 6,
-          "column": 39
+          "line": 5,
+          "column": 45
         }
       }
     },
@@ -1596,16 +1228,48 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 184,
-      "end": 185,
+      "start": 159,
+      "end": 160,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 45
+        },
+        "end": {
+          "line": 5,
+          "column": 46
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " import indexeddb from './indexeddb';",
+      "start": 161,
+      "end": 200,
       "loc": {
         "start": {
           "line": 6,
-          "column": 39
+          "column": 0
         },
         "end": {
           "line": 6,
-          "column": 40
+          "column": 39
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " import googledrive from './googleDrive';",
+      "start": 201,
+      "end": 244,
+      "loc": {
+        "start": {
+          "line": 7,
+          "column": 0
+        },
+        "end": {
+          "line": 7,
+          "column": 43
         }
       }
     },
@@ -1624,15 +1288,15 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 187,
-      "end": 193,
+      "start": 246,
+      "end": 252,
       "loc": {
         "start": {
-          "line": 8,
+          "line": 9,
           "column": 0
         },
         "end": {
-          "line": 8,
+          "line": 9,
           "column": 6
         }
       }
@@ -1652,15 +1316,15 @@
         "updateContext": null
       },
       "value": "default",
-      "start": 194,
-      "end": 201,
+      "start": 253,
+      "end": 260,
       "loc": {
         "start": {
-          "line": 8,
+          "line": 9,
           "column": 7
         },
         "end": {
-          "line": 8,
+          "line": 9,
           "column": 14
         }
       }
@@ -1677,15 +1341,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 202,
-      "end": 203,
+      "start": 261,
+      "end": 262,
       "loc": {
         "start": {
-          "line": 8,
+          "line": 9,
           "column": 15
         },
         "end": {
-          "line": 8,
+          "line": 9,
           "column": 16
         }
       }
@@ -1703,15 +1367,15 @@
         "binop": null
       },
       "value": "base64",
-      "start": 206,
-      "end": 212,
+      "start": 265,
+      "end": 271,
       "loc": {
         "start": {
-          "line": 9,
+          "line": 10,
           "column": 2
         },
         "end": {
-          "line": 9,
+          "line": 10,
           "column": 8
         }
       }
@@ -1729,68 +1393,32 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 212,
-      "end": 213,
+      "start": 271,
+      "end": 272,
       "loc": {
         "start": {
-          "line": 9,
+          "line": 10,
           "column": 8
         },
         "end": {
-          "line": 9,
+          "line": 10,
           "column": 9
         }
       }
     },
     {
-      "type": {
-        "label": "name",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "value": "s3",
-      "start": 216,
-      "end": 218,
+      "type": "CommentLine",
+      "value": " s3,",
+      "start": 275,
+      "end": 281,
       "loc": {
         "start": {
-          "line": 10,
+          "line": 11,
           "column": 2
         },
         "end": {
-          "line": 10,
-          "column": 4
-        }
-      }
-    },
-    {
-      "type": {
-        "label": ",",
-        "beforeExpr": true,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null,
-        "updateContext": null
-      },
-      "start": 218,
-      "end": 219,
-      "loc": {
-        "start": {
-          "line": 10,
-          "column": 4
-        },
-        "end": {
-          "line": 10,
-          "column": 5
+          "line": 11,
+          "column": 8
         }
       }
     },
@@ -1807,15 +1435,15 @@
         "binop": null
       },
       "value": "url",
-      "start": 222,
-      "end": 225,
+      "start": 284,
+      "end": 287,
       "loc": {
         "start": {
-          "line": 11,
+          "line": 12,
           "column": 2
         },
         "end": {
-          "line": 11,
+          "line": 12,
           "column": 5
         }
       }
@@ -1833,15 +1461,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 225,
-      "end": 226,
+      "start": 287,
+      "end": 288,
       "loc": {
         "start": {
-          "line": 11,
+          "line": 12,
           "column": 5
         },
         "end": {
-          "line": 11,
+          "line": 12,
           "column": 6
         }
       }
@@ -1858,17 +1486,17 @@
         "postfix": false,
         "binop": null
       },
-      "value": "azure",
-      "start": 229,
-      "end": 234,
+      "value": "urlGoogleDrive",
+      "start": 291,
+      "end": 305,
       "loc": {
         "start": {
-          "line": 12,
+          "line": 13,
           "column": 2
         },
         "end": {
-          "line": 12,
-          "column": 7
+          "line": 13,
+          "column": 16
         }
       }
     },
@@ -1885,86 +1513,24 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 234,
-      "end": 235,
+      "start": 305,
+      "end": 306,
       "loc": {
         "start": {
-          "line": 12,
-          "column": 7
+          "line": 13,
+          "column": 16
         },
         "end": {
-          "line": 12,
-          "column": 8
+          "line": 13,
+          "column": 17
         }
       }
     },
     {
-      "type": {
-        "label": "name",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "value": "indexeddb",
-      "start": 238,
-      "end": 247,
-      "loc": {
-        "start": {
-          "line": 13,
-          "column": 2
-        },
-        "end": {
-          "line": 13,
-          "column": 11
-        }
-      }
-    },
-    {
-      "type": {
-        "label": ",",
-        "beforeExpr": true,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null,
-        "updateContext": null
-      },
-      "start": 247,
-      "end": 248,
-      "loc": {
-        "start": {
-          "line": 13,
-          "column": 11
-        },
-        "end": {
-          "line": 13,
-          "column": 12
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "name",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "value": "googledrive",
-      "start": 251,
-      "end": 262,
+      "type": "CommentLine",
+      "value": " azure,",
+      "start": 309,
+      "end": 318,
       "loc": {
         "start": {
           "line": 14,
@@ -1972,7 +1538,39 @@
         },
         "end": {
           "line": 14,
-          "column": 13
+          "column": 11
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " indexeddb,",
+      "start": 321,
+      "end": 334,
+      "loc": {
+        "start": {
+          "line": 15,
+          "column": 2
+        },
+        "end": {
+          "line": 15,
+          "column": 15
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " googledrive",
+      "start": 337,
+      "end": 351,
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 2
+        },
+        "end": {
+          "line": 16,
+          "column": 16
         }
       }
     },
@@ -1988,15 +1586,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 263,
-      "end": 264,
+      "start": 352,
+      "end": 353,
       "loc": {
         "start": {
-          "line": 15,
+          "line": 17,
           "column": 0
         },
         "end": {
-          "line": 15,
+          "line": 17,
           "column": 1
         }
       }
@@ -2014,15 +1612,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 264,
-      "end": 265,
+      "start": 353,
+      "end": 354,
       "loc": {
         "start": {
-          "line": 15,
+          "line": 17,
           "column": 1
         },
         "end": {
-          "line": 15,
+          "line": 17,
           "column": 2
         }
       }
@@ -2040,15 +1638,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 266,
-      "end": 266,
+      "start": 355,
+      "end": 355,
       "loc": {
         "start": {
-          "line": 16,
+          "line": 18,
           "column": 0
         },
         "end": {
-          "line": 16,
+          "line": 18,
           "column": 0
         }
       }

@@ -130,6 +130,7 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-s3">s3</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getFormioUploadAdapterPlugin">getFormioUploadAdapterPlugin</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-url">url</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-urlGoogleDrive">urlGoogleDrive</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setXhrHeaders">setXhrHeaders</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-XHR">XHR</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#templates">templates</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/templates/Templates.js~Templates.html">Templates</a></span></span></li>
@@ -202,7 +203,13 @@ export default [
     placeholder: &apos;Enter the url to post the files to.&apos;,
     tooltip: &quot;See &lt;a href=&apos;https://github.com/danialfarid/ng-file-upload#server-side&apos; target=&apos;_blank&apos;&gt;https://github.com/danialfarid/ng-file-upload#server-side&lt;/a&gt; for how to set up the server.&quot;,
     conditional: {
-      json: { &apos;===&apos;: [{ var: &apos;data.storage&apos; }, &apos;url&apos;] }
+      // json: { &apos;===&apos;: [{ var: &apos;data.storage&apos; }, &apos;url&apos;] }
+      json: {
+        or: [
+          { &apos;===&apos;: [{ var: &apos;data.storage&apos; }, &apos;url&apos;] },
+          { &apos;===&apos;: [{ var: &apos;data.storage&apos; }, &apos;urlGoogleDrive&apos;] }
+        ]
+      }
     }
   },
   {
@@ -254,10 +261,16 @@ export default [
   &quot;withCredentials&quot;: true
 }`,
     conditional: {
+      // json: {
+      //   &apos;===&apos;: [{
+      //     var: &apos;data.storage&apos;
+      //   }, &apos;url&apos;]
+      // }
       json: {
-        &apos;===&apos;: [{
-          var: &apos;data.storage&apos;
-        }, &apos;url&apos;]
+        or: [
+          { &apos;===&apos;: [{ var: &apos;data.storage&apos; }, &apos;url&apos;] },
+          { &apos;===&apos;: [{ var: &apos;data.storage&apos; }, &apos;urlGoogleDrive&apos;] }
+        ]
       }
     }
   },
@@ -270,10 +283,16 @@ export default [
     placeholder: &apos;Enter the key name of a file for form data.&apos;,
     tooltip: &apos;Key name that you would like to modify for the file while calling API request.&apos;,
     conditional: {
+      // json: {
+      //   &apos;===&apos;: [{
+      //     var: &apos;data.storage&apos;
+      //   }, &apos;url&apos;]
+      // }
       json: {
-        &apos;===&apos;: [{
-          var: &apos;data.storage&apos;
-        }, &apos;url&apos;]
+        or: [
+          { &apos;===&apos;: [{ var: &apos;data.storage&apos; }, &apos;url&apos;] },
+          { &apos;===&apos;: [{ var: &apos;data.storage&apos; }, &apos;urlGoogleDrive&apos;] }
+        ]
       }
     }
   },
@@ -342,7 +361,13 @@ export default [
     tooltip: &apos;When this is checked, the file download will send a POST request to the download URL with the x-jwt-token header. This will allow your endpoint to create a Private download system.&apos;,
     weight: 31,
     conditional: {
-      json: { &apos;===&apos;: [{ var: &apos;data.storage&apos; }, &apos;url&apos;] }
+      // json: { &apos;===&apos;: [{ var: &apos;data.storage&apos; }, &apos;url&apos;] }
+      json: {
+        or: [
+          { &apos;===&apos;: [{ var: &apos;data.storage&apos; }, &apos;url&apos;] },
+          { &apos;===&apos;: [{ var: &apos;data.storage&apos; }, &apos;urlGoogleDrive&apos;] }
+        ]
+      }
     }
   },
   {

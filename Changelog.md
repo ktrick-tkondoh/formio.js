@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## 4.14.10.ktrick.3-2024.05.29
+
+- URL ベースの Google Drive をファイルコンポーネントのストレージプロバイダに追加
+- Base64、Url、Google Drive(URLベース)以外のストレージプロパイダを無効化
+  - modified: src/components/file/editForm/File.edit.file.js
+  - modified: src/providers/storage/index.js
+  - created: src/providers/storage/urlGoogleDrive.js
+
 ## 4.14.10.ktrick.2-2024.05.21
 
 - dist をアップデート

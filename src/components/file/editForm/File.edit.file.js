@@ -30,7 +30,13 @@ export default [
     placeholder: 'Enter the url to post the files to.',
     tooltip: "See <a href='https://github.com/danialfarid/ng-file-upload#server-side' target='_blank'>https://github.com/danialfarid/ng-file-upload#server-side</a> for how to set up the server.",
     conditional: {
-      json: { '===': [{ var: 'data.storage' }, 'url'] }
+      // json: { '===': [{ var: 'data.storage' }, 'url'] }
+      json: {
+        or: [
+          { '===': [{ var: 'data.storage' }, 'url'] },
+          { '===': [{ var: 'data.storage' }, 'urlGoogleDrive'] }
+        ]
+      }
     }
   },
   {
@@ -82,10 +88,16 @@ export default [
   "withCredentials": true
 }`,
     conditional: {
+      // json: {
+      //   '===': [{
+      //     var: 'data.storage'
+      //   }, 'url']
+      // }
       json: {
-        '===': [{
-          var: 'data.storage'
-        }, 'url']
+        or: [
+          { '===': [{ var: 'data.storage' }, 'url'] },
+          { '===': [{ var: 'data.storage' }, 'urlGoogleDrive'] }
+        ]
       }
     }
   },
@@ -98,10 +110,16 @@ export default [
     placeholder: 'Enter the key name of a file for form data.',
     tooltip: 'Key name that you would like to modify for the file while calling API request.',
     conditional: {
+      // json: {
+      //   '===': [{
+      //     var: 'data.storage'
+      //   }, 'url']
+      // }
       json: {
-        '===': [{
-          var: 'data.storage'
-        }, 'url']
+        or: [
+          { '===': [{ var: 'data.storage' }, 'url'] },
+          { '===': [{ var: 'data.storage' }, 'urlGoogleDrive'] }
+        ]
       }
     }
   },
@@ -170,7 +188,13 @@ export default [
     tooltip: 'When this is checked, the file download will send a POST request to the download URL with the x-jwt-token header. This will allow your endpoint to create a Private download system.',
     weight: 31,
     conditional: {
-      json: { '===': [{ var: 'data.storage' }, 'url'] }
+      // json: { '===': [{ var: 'data.storage' }, 'url'] }
+      json: {
+        or: [
+          { '===': [{ var: 'data.storage' }, 'url'] },
+          { '===': [{ var: 'data.storage' }, 'urlGoogleDrive'] }
+        ]
+      }
     }
   },
   {
